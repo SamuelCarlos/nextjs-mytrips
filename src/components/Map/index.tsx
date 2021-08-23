@@ -52,11 +52,11 @@ const Map = ({ places }: MapProps) => {
       >
         <MapConsumer>
           {(map) => {
-            const width = 
+            const width =
               window.innerWidth ||
               document.documentElement.clientWidth ||
               document.body.clientWidth
-
+              
             if(width < 768) {
               map.setMinZoom(2)
             }
